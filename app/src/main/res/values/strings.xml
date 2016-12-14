@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LittleThings</string>
+    <string name="FitnessPageTitle">This is the LittleThings Fitness Page</string>
+    <string name="FitnessIntro">This page allows you to access fitness plans as well as creating your own by adding your favourite exercises to a personal routine</string>
+    <string name="fitness_plans_button">Fitness Plans</string>
+    <string name="create_your_own_button">Create Your own</string>
+</resources>
