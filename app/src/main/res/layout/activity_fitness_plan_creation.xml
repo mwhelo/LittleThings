@@ -65,19 +65,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/black" />
 
-    <TextView
-        android:text="Exercise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:layout_alignBaseline="@+id/editText_exercise"
-        android:layout_alignBottom="@+id/editText_exercise"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/black" />
-
     <Button
         android:text="View Routine"
         android:layout_width="wrap_content"
@@ -145,5 +132,16 @@
         android:id="@+id/button_update"
         android:layout_marginTop="13dp"
         android:layout_below="@+id/button_view"
-        android:layout_alignStart="@+id/editText_id" />
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:text="Exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/editText_reps"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
