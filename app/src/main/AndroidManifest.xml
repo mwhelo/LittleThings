@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterPage">
+        <activity android:name=".WelcomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,8 @@
         <activity android:name=".FitnessPage" />
         <activity android:name=".FitnessPlanCreation" />
         <activity android:name=".HomePage" />
-        <activity android:name=".LoginPage"></activity>
+        <activity android:name=".LoginPage" />
+        <activity android:name=".RegisterPage"/>
     </application>
 
 </manifest>
