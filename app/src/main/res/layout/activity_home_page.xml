@@ -39,15 +39,15 @@
         android:id="@+id/textView" />
 
     <Button
-        android:text="Diet"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button4"
-        android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:layout_marginRight="36dp"
+        android:layout_alignRight="@+id/textView"
         android:layout_marginEnd="36dp"
-        android:id="@+id/button5" />
+        android:layout_marginRight="36dp"
+        android:text="Mindfulness" />
 
     <Button
         android:text="Sleep"

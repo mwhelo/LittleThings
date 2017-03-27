@@ -47,6 +47,14 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
             }
         });
 
+        Button mindfulness=(Button)findViewById(R.id.button5);
+        mindfulness.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent myIntent = new Intent(HomePage.this, Mindfulness.class);
+                HomePage.this.startActivity(myIntent);
+            }
+        });
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         if(firebaseAuth.getCurrentUser() == null){
