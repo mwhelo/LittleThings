@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_home_page"
     android:layout_width="match_parent"
@@ -9,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.x1243.littlethings.HomePage"
-    android:background="@drawable/littlethingslogo">
+    android:background="@drawable/background_two">
 
     <TextView
         android:layout_width="match_parent"
@@ -19,14 +20,17 @@
         android:textSize="23dp"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
-        android:id="@+id/title"/>
+        android:id="@+id/title"
+        android:layout_above="@+id/button_logout"
+        android:layout_alignEnd="@+id/textView" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="This is app is for helping people who are living with mental health problems. It will user the areas hightlighted in the HSE's The little Things campaign to do so."
         android:textSize="19dp"
-        android:layout_below="@+id/title"
-        android:id="@+id/tv1"/>
+        android:id="@+id/tv1"
+        android:layout_above="@+id/title"
+        android:layout_alignStart="@+id/textView" />
 
     <TextView
         android:text="Please Select the part of your life you would like to improve"
@@ -34,9 +38,10 @@
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:id="@+id/textView"
+        android:layout_above="@+id/button5"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:layout_marginBottom="33dp" />
 
     <Button
         android:id="@+id/button5"
@@ -63,22 +68,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="53dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="44dp"
         android:id="@+id/button4"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_above="@+id/button7"
+        android:layout_toStartOf="@+id/textViewUserEmail"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="33dp" />
 
     <Button
         android:text="Videos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:id="@+id/button6"
-        android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginBottom="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,4 +98,12 @@
         android:text="Logout"
         android:layout_above="@+id/textView"
         android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ll_logo" />
 </RelativeLayout>

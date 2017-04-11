@@ -24,7 +24,8 @@
         <activity android:name=".HomePage" />
         <activity android:name=".LoginPage" />
         <activity android:name=".RegisterPage" />
-        <activity android:name=".Mindfulness"></activity>
+        <activity android:name=".Mindfulness" />
+        <activity android:name=".InformationPage"></activity>
     </application>
 
 </manifest>
