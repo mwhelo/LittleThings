@@ -25,9 +25,8 @@
         <activity android:name=".LoginPage" />
         <activity android:name=".RegisterPage" />
         <activity android:name=".Mindfulness" />
-        <activity android:name=".Message"/>
-        <activity android:name=".Chat"/>
-        <activity android:name=".InformationPage"></activity>
+        <activity android:name=".Message" />
+        <activity android:name=".Chat" />
     </application>
 
 </manifest>

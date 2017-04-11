@@ -8,30 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/littlethingslogo"
+    android:background="@drawable/background_two"
     tools:context="com.example.x1243.littlethings.YouTubeAPI">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/PLAY_VIDEO"
-        android:text="PLAY ViIDEO" />
+
 
     <view
+        android:id="@+id/youtube_view"
+        class="com.google.android.youtube.player.YouTubePlayerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        class="com.google.android.youtube.player.YouTubePlayerView"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/title_tv"
         android:layout_centerHorizontal="true"
-        android:id="@+id/youtube_view" />
+        android:layout_marginTop="27dp" />
 
     <Button
-        android:text="Home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/button2" />
+        android:id="@+id/PLAY_VIDEO"
+        android:text="PLAY ViIDEO"
+        android:layout_marginTop="76dp"
+        android:layout_below="@+id/youtube_view"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information Page"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

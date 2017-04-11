@@ -4,14 +4,14 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 
 public class Mindfulness extends Activity implements Runnable {
 
-    private Button startButton;
-    private Button pauseButton;
-    private Button stopButton;
+    private ImageView startButton;
+    private ImageView pauseButton;
+    private ImageView stopButton;
     private MediaPlayer soundPlayer;
     private SeekBar soundSeekBar;
     private Thread soundThread;
@@ -21,9 +21,9 @@ public class Mindfulness extends Activity implements Runnable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mindfulness);
 
-        startButton = (Button) findViewById(R.id.playButton1);
-        pauseButton = (Button) findViewById(R.id.pauseButton1);
-        stopButton = (Button) findViewById(R.id.stopButton1);
+        startButton = (ImageView) findViewById(R.id.playButton1);
+        pauseButton = (ImageView) findViewById(R.id.pauseButton1);
+        stopButton = (ImageView) findViewById(R.id.stopButton1);
         soundSeekBar = (SeekBar) findViewById(R.id.seekBar1);
         soundPlayer = MediaPlayer.create(this.getBaseContext(),R.raw.sos);
 

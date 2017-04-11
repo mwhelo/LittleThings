@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/littlethingslogo"
+    android:background="@drawable/background_two"
     tools:context="com.example.x1243.littlethings.FitnessPage">
 
     <TextView

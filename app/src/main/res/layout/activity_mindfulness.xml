@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/littlethingslogo"
+    android:background="@drawable/background_two"
     tools:context="com.example.x1243.littlethings.Mindfulness">
 
 
     <TextView
         android:id="@+id/introTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
         android:text="On this page you will find 3 audio tracks to help you relax in times of stress. Simply click the play button on the track that best fits your situation"
         android:textColor="#000000"
         android:textSize="20dp"
@@ -37,29 +37,34 @@
         android:layout_below="@+id/sosTitle"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <ImageView
         android:id="@+id/playButton1"
         android:layout_width="wrap_content"
+        android:src="@mipmap/ic_play_arrow_black_48dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:text="Play"
         android:layout_below="@+id/seekBar1"
-        android:text="Play" />
+        android:layout_alignStart="@+id/introTextView"
+        android:layout_marginStart="17dp" />
 
-    <Button
+    <ImageView
         android:id="@+id/pauseButton1"
+        android:src="@mipmap/ic_pause_black_48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/playButton1"
         android:layout_centerHorizontal="true"
         android:text="Pause" />
 
-    <Button
+    <ImageView
         android:id="@+id/stopButton1"
+        android:src="@mipmap/ic_stop_black_48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:text="Stop"
         android:layout_below="@+id/seekBar1"
-        android:text="Stop" />
+        android:layout_alignEnd="@+id/introTextView"
+        android:layout_marginEnd="17dp" />
 
 
 </RelativeLayout>
