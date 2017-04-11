@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,7 +24,7 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        Button youTube=(Button)findViewById(R.id.button6);
+        ImageView youTube=(ImageView) findViewById(R.id.button6);
         youTube.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent myIntent = new Intent(HomePage.this, YouTubeAPI.class);
@@ -31,15 +32,15 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
             }
         });
 
-        Button sleep=(Button)findViewById(R.id.button7);
-        sleep.setOnClickListener(new View.OnClickListener(){
+        ImageView chat=(ImageView) findViewById(R.id.button7);
+        chat.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent myIntent = new Intent(HomePage.this, Sleep.class);
+                Intent myIntent = new Intent(HomePage.this, Message.class);
                 HomePage.this.startActivity(myIntent);
             }
         });
 
-        Button fitness=(Button)findViewById(R.id.button4);
+        ImageView fitness=(ImageView) findViewById(R.id.button4);
         fitness.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent myIntent = new Intent(HomePage.this, FitnessPage.class);
@@ -47,7 +48,7 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
             }
         });
 
-        Button mindfulness=(Button)findViewById(R.id.button5);
+        ImageView mindfulness=(ImageView) findViewById(R.id.button5);
         mindfulness.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent myIntent = new Intent(HomePage.this, Mindfulness.class);

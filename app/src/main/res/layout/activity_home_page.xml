@@ -15,22 +15,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:typeface="monospace"
-        android:textSize="23dp"
+        android:textSize="10dp"
         android:fontFamily="sans-serif"
+        android:layout_centerVertical="true"
         android:textStyle="bold"
         android:id="@+id/title"
-        android:layout_above="@+id/button_logout"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignBottom="@+id/textViewUserEmail"
+        android:layout_alignParentStart="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="This is app is for helping people who are living with mental health problems. It will user the areas hightlighted in the HSE's The little Things campaign to do so."
-        android:textSize="19dp"
+        android:textSize="16dp"
         android:id="@+id/tv1"
-        android:layout_above="@+id/title"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:text="Please Select the part of your life you would like to improve"
@@ -43,19 +44,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="33dp" />
 
-    <Button
+    <ImageView
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button4"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
-        android:text="Mindfulness" />
+        app:srcCompat="@drawable/mental_48"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toEndOf="@+id/textViewUserEmail"
+        android:layout_marginStart="43dp" />
 
-    <Button
-        android:text="Sleep"
+    <ImageView
+        app:srcCompat="@mipmap/ic_chat_black_48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/button6"
@@ -63,25 +63,24 @@
         android:layout_alignStart="@+id/button5"
         android:id="@+id/button7" />
 
-    <Button
-        android:text="Fitness"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="53dp"
         android:id="@+id/button4"
-        android:layout_above="@+id/button7"
-        android:layout_toStartOf="@+id/textViewUserEmail"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="33dp" />
+        app:srcCompat="@drawable/physical_48"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/button6"
+        android:layout_toStartOf="@+id/imageButton" />
 
-    <Button
-        android:text="Videos"
+    <ImageView
+        app:srcCompat="@mipmap/ic_tv_black_48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button6"
+        android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button4"
-        android:layout_marginBottom="15dp" />
+        android:layout_alignStart="@+id/button4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,14 +95,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/textView" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tv1"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/ll_logo" />
+        app:srcCompat="@drawable/ll_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

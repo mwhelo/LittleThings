@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_two">
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/send" />
+
+    <EditText
+        android:id="@+id/msg_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/send_btn"
+        android:layout_toLeftOf="@+id/send_btn"
+        android:layout_toStartOf="@+id/send_btn"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="20dp"/>
+    </ScrollView>
+</RelativeLayout>
