@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:typeface="monospace"
         android:textSize="10dp"
+        android:textColor="#34A180"
         android:fontFamily="sans-serif"
         android:layout_centerVertical="true"
         android:textStyle="bold"
@@ -26,20 +27,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is app is for helping people who are living with mental health problems. It will user the areas hightlighted in the HSE's The little Things campaign to do so."
+        android:text="@string/this_is_app_is_for_helping_people_who_are_living_with_mental_health_problems_it_will_user_the_areas_hightlighted_in_the_hse_s_the_little_things_campaign_to_do_so"
         android:textSize="16dp"
         android:id="@+id/tv1"
+        android:textColor="#34A180"
         android:layout_below="@+id/imageButton"
         android:layout_alignStart="@+id/textView"
         android:layout_marginTop="20dp" />
 
     <TextView
-        android:text="Please Select the part of your life you would like to improve"
+        android:text="@string/please_select_the_part_of_your_life_you_would_like_to_improve"
         android:textSize="13dp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
+        android:textColor="#34A180"
         android:layout_above="@+id/button5"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="33dp" />
@@ -86,15 +89,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv1"
+        android:textColor="#34A180"
         android:layout_centerHorizontal="true"
         android:id="@+id/textViewUserEmail"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
+    <ImageView
         android:id="@+id/button_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
+        android:text="@string/logout"
+        android:src="@drawable/logout"
+        android:textColor="#34A180"
         android:layout_below="@+id/title"
         android:layout_alignStart="@+id/textView" />
 

@@ -3,6 +3,10 @@
     package="com.example.x1243.littlethings">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -18,7 +22,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".YouTubeAPI" />
-        <activity android:name=".Sleep" />
         <activity android:name=".FitnessPage" />
         <activity android:name=".FitnessPlanCreation" />
         <activity android:name=".HomePage" />

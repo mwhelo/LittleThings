@@ -16,7 +16,7 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
     private FirebaseAuth firebaseAuth;
 
     private TextView textViewUserEmail;
-    private Button button_logout;
+    private ImageView button_logout;
     private TextView title;
 
     @Override
@@ -69,7 +69,7 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
 
         title.setText("Welcome to The Little Things App "+user.getEmail());
 
-        button_logout = (Button) findViewById(R.id.button_logout);
+        button_logout = (ImageView) findViewById(R.id.button_logout);
 
         button_logout.setOnClickListener(this);
 

@@ -11,4 +11,7 @@
     <string name="title_activity_information">Information</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="please_select_the_part_of_your_life_you_would_like_to_improve">Please Select the part of your life you would like to improve</string>
+    <string name="this_is_app_is_for_helping_people_who_are_living_with_mental_health_problems_it_will_user_the_areas_hightlighted_in_the_hse_s_the_little_things_campaign_to_do_so">This is app is for helping people who are living with mental health problems. It will user the areas hightlighted in the HSE\'s The little Things campaign to do so.</string>
+    <string name="logout">Logout</string>
 </resources>

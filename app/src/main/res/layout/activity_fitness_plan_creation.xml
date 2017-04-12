@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/littlethingslogo"
+    android:background="@drawable/background_two"
     tools:context="com.example.x1243.littlethings.FitnessPlanCreation">
 
     <EditText
@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
+        android:textColor="#34A180"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -24,6 +25,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#34A180"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText_reps"
@@ -34,6 +36,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#34A180"
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_below="@+id/editText_reps"
@@ -43,6 +46,7 @@
 
     <TextView
         android:text="Sets"
+        android:textColor="#34A180"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView7"
@@ -50,8 +54,7 @@
         android:layout_alignBottom="@+id/editText_sets"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/black" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:text="Reps"
@@ -63,7 +66,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/black" />
+        android:textColor="#34A180" />
 
     <Button
         android:text="View Routine"
@@ -73,7 +76,8 @@
         android:layout_alignBaseline="@+id/button_save"
         android:layout_alignBottom="@+id/button_save"
         android:layout_toRightOf="@+id/button_save"
-        android:layout_toEndOf="@+id/button_save" />
+        android:layout_toEndOf="@+id/button_save"
+        android:textColor="#34A180"/>
 
     <Button
         android:text="Save"
@@ -83,7 +87,8 @@
         android:id="@+id/button_save"
         android:layout_below="@+id/editText_sets"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#34A180"/>
 
     <TextView
         android:text="ID"
@@ -92,7 +97,7 @@
         android:id="@+id/textView8"
         android:layout_marginTop="11dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/black"
+        android:textColor="#34A180"
         android:layout_below="@+id/editText_sets"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -103,6 +108,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText_id"
+        android:textColor="#34A180"
         android:layout_below="@+id/editText_sets"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -112,6 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
+        android:textColor="#34A180"
         android:textAppearance="@style/TextAppearance.AppCompat.Menu"
         android:layout_below="@+id/button_delete"
         android:layout_alignParentStart="true" />
@@ -121,6 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_delete"
+        android:textColor="#34A180"
         android:layout_alignTop="@+id/button_update"
         android:layout_alignParentStart="true" />
 
@@ -131,6 +139,7 @@
         android:layout_marginLeft="10dp"
         android:id="@+id/button_update"
         android:layout_marginTop="13dp"
+        android:textColor="#34A180"
         android:layout_below="@+id/button_view"
         android:layout_alignEnd="@+id/textView4"
         android:layout_marginEnd="21dp" />
@@ -140,8 +149,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
+        android:textColor="#34A180"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/black"
         android:layout_above="@+id/editText_reps"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

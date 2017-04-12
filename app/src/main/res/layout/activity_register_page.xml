@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_register_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,8 +9,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/littlethingslogo"
+    android:background="@drawable/background_two"
     tools:context="com.example.x1243.littlethings.RegisterPage">
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ll_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:layout_centerHorizontal="true"
@@ -23,6 +32,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="User Registration"
+            android:textColor="#34A180"
             android:id="@+id/textView_register"
             android:layout_gravity="center_horizontal"/>
 
@@ -31,6 +41,7 @@
             android:inputType="textEmailAddress"
             android:hint="Enter Your Email"
             android:id="@+id/editTextEmail"
+            android:textColor="#34A180"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -39,6 +50,7 @@
             android:inputType="textPassword"
             android:hint="Enter Your Password"
             android:id="@+id/editPassword"
+            android:textColor="#34A180"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -47,10 +59,12 @@
             android:id="@+id/button_register"
             android:text="Register User"
             android:layout_width="match_parent"
+            android:textColor="#34A180"
             android:layout_height="wrap_content" />
 
         <TextView
             android:textAlignment="center"
+            android:textColor="#34A180"
             android:text="Already Registered? Signin Here"
             android:id="@+id/textViewSignin"
             android:layout_width="match_parent"

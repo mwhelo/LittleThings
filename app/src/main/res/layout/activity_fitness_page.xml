@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_fitness_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,19 +12,30 @@
     android:background="@drawable/background_two"
     tools:context="com.example.x1243.littlethings.FitnessPage">
 
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ll_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:text="@string/FitnessPageTitle"
         android:layout_width="wrap_content"
+        android:textColor="#34A180"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/imageButton"
         android:layout_centerHorizontal="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:layout_marginTop="13dp" />
 
     <TextView
         android:text="@string/FitnessIntro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#34A180"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
@@ -34,8 +46,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/textView2" />
+        android:textColor="#34A180"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="52dp" />
 
     <Button
         android:text="@string/create_your_own_button"
@@ -43,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="14dp"
         android:id="@+id/button8"
+        android:textColor="#34A180"
         android:layout_alignBaseline="@+id/button3"
         android:layout_alignBottom="@+id/button3"
         android:layout_alignParentEnd="true" />

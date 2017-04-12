@@ -13,8 +13,9 @@
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:text="On this page you will find 3 audio tracks to help you relax in times of stress. Simply click the play button on the track that best fits your situation"
-        android:textColor="#000000"
+
         android:textSize="20dp"
+        android:textColor="#34A180"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp" />
@@ -23,8 +24,8 @@
         android:id="@+id/sosTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:textSize="30dp"
+        android:textColor="#34A180"
         android:layout_marginTop="31dp"
         android:text="SOS Mindfulness"
         android:layout_below="@+id/introTextView"
