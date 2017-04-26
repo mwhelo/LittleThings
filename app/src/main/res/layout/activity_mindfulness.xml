@@ -8,64 +8,176 @@
     tools:context="com.example.x1243.littlethings.Mindfulness">
 
 
-    <TextView
-        android:id="@+id/introTextView"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:text="On this page you will find 3 audio tracks to help you relax in times of stress. Simply click the play button on the track that best fits your situation"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:textSize="20dp"
-        android:textColor="#34A180"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/sosTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="#34A180"
-        android:layout_marginTop="31dp"
-        android:text="SOS Mindfulness"
-        android:layout_below="@+id/introTextView"
-        android:layout_alignParentStart="true" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                app:srcCompat="@drawable/ll_logo" />
 
-    <SeekBar
-        android:id="@+id/seekBar1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/sosTitle"
-        android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/introTextView"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:text="On this page you will find 3 audio tracks to help you relax in times of stress. Simply click the play button on the track that best fits your situation"
+                android:textColor="#34A180"
+                android:textSize="20dp" />
 
-    <ImageView
-        android:id="@+id/playButton1"
-        android:layout_width="wrap_content"
-        android:src="@mipmap/ic_play_arrow_black_48dp"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        android:layout_below="@+id/seekBar1"
-        android:layout_alignStart="@+id/introTextView"
-        android:layout_marginStart="17dp" />
+            <TextView
+                android:id="@+id/sosTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#34A180"
+                android:layout_marginTop="31dp"
+                android:text="SOS Mindfulness"
+                android:layout_below="@+id/introTextView"
+                android:layout_alignParentStart="true" />
 
-    <ImageView
-        android:id="@+id/pauseButton1"
-        android:src="@mipmap/ic_pause_black_48dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/playButton1"
-        android:layout_centerHorizontal="true"
-        android:text="Pause" />
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sosTitle"
+                android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:id="@+id/stopButton1"
-        android:src="@mipmap/ic_stop_black_48dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop"
-        android:layout_below="@+id/seekBar1"
-        android:layout_alignEnd="@+id/introTextView"
-        android:layout_marginEnd="17dp" />
+            <ImageView
+                android:id="@+id/playButton1"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_48dp"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_below="@+id/seekBar1"
+                android:layout_marginStart="17dp" />
+
+            <ImageView
+                android:id="@+id/pauseButton1"
+                android:src="@mipmap/ic_pause_black_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playButton1"
+                android:layout_centerHorizontal="true"
+                android:text="Pause" />
+
+            <ImageView
+                android:id="@+id/stopButton1"
+                android:src="@mipmap/ic_stop_black_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:layout_marginEnd="23dp"
+                android:layout_below="@+id/seekBar1"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/medTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#34A180"
+                android:layout_marginTop="31dp"
+                android:text="Meditation "
+                android:layout_below="@id/stopButton1"/>
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medTitle"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/playButton2"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_48dp"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_below="@+id/seekBar2"
+                android:layout_marginStart="17dp" />
+
+            <ImageView
+                android:id="@+id/pauseButton2"
+                android:src="@mipmap/ic_pause_black_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playButton2"
+                android:layout_centerHorizontal="true"
+                android:text="Pause" />
+
+            <ImageView
+                android:id="@+id/stopButton2"
+                android:src="@mipmap/ic_stop_black_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:layout_marginEnd="23dp"
+                android:layout_below="@+id/seekBar2"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/sleepTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#34A180"
+                android:layout_marginTop="31dp"
+                android:text="Sleep "
+                android:layout_below="@id/stopButton2"/>
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sleepTitle"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/playButton3"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_48dp"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_below="@+id/seekBar3"
+                android:layout_marginStart="17dp" />
+
+            <ImageView
+                android:id="@+id/pauseButton3"
+                android:src="@mipmap/ic_pause_black_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playButton3"
+                android:layout_centerHorizontal="true"
+                android:text="Pause" />
+
+            <ImageView
+                android:id="@+id/stopButton3"
+                android:src="@mipmap/ic_stop_black_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:layout_marginEnd="23dp"
+                android:layout_below="@+id/seekBar3"
+                android:layout_alignParentEnd="true" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
 
 
 </RelativeLayout>
