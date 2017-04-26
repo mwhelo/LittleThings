@@ -21,6 +21,14 @@ public class FitnessPage extends AppCompatActivity {
             }
         });
 
+        Button fitnessPlan =(Button)findViewById(R.id.button3);
+        fitnessPlan.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent myIntent = new Intent(FitnessPage.this, FitnessPlans.class);
+                FitnessPage.this.startActivity(myIntent);
+            }
+        });
+
     }
 
 
