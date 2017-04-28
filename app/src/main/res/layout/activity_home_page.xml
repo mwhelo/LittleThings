@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.x1243.littlethings.HomePage"
+    android:background="@drawable/background_two">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:textSize="10dp"
+        android:textColor="#34A180"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_alignBottom="@+id/textViewUserEmail"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_is_app_is_for_helping_people_who_are_living_with_mental_health_problems_it_will_user_the_areas_hightlighted_in_the_hse_s_the_little_things_campaign_to_do_so"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:id="@+id/tv1"
+        android:textColor="#34A180"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/clickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_logout"
+        android:layout_below="@+id/button_logout"
+        android:gravity="center"
+        android:text="Want to test your knowledge about mental health? click here" />
+
+    <TextView
+        android:text="@string/please_select_the_part_of_your_life_you_would_like_to_improve"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#34A180"
+        android:layout_below="@+id/clickHere"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="36dp"
+        app:srcCompat="@drawable/mental_48"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toEndOf="@+id/textViewUserEmail"
+        android:layout_marginStart="43dp" />
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_chat_black_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:id="@+id/button7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:id="@+id/button4"
+        app:srcCompat="@drawable/physical_48"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/button6"
+        android:layout_toStartOf="@+id/imageButton" />
+
+    <ImageView
+        app:srcCompat="@mipmap/ic_info_black_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:textColor="#34A180"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewUserEmail"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:src="@drawable/logout"
+        android:textColor="#34A180"
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ll_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

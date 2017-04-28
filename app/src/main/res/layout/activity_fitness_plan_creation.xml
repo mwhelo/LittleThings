@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fitness_plan_creation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_two"
+    tools:context="com.example.x1243.littlethings.FitnessPlanCreation">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColor="#34A180"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/editText_exercise" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#34A180"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_reps"
+        android:layout_below="@+id/editText_exercise"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#34A180"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editText_reps"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/editText_sets" />
+
+    <TextView
+        android:text="Sets"
+        android:textColor="#34A180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/editText_sets"
+        android:layout_alignBottom="@+id/editText_sets"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="Reps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/editText_reps"
+        android:layout_alignBottom="@+id/editText_reps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#34A180" />
+
+    <Button
+        android:text="View Routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_view"
+        android:layout_alignBaseline="@+id/button_save"
+        android:layout_alignBottom="@+id/button_save"
+        android:layout_toRightOf="@+id/button_save"
+        android:layout_toEndOf="@+id/button_save"
+        android:textColor="#34A180"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/button_save"
+        android:layout_below="@+id/editText_sets"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#34A180"/>
+
+    <TextView
+        android:text="ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_marginTop="11dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#34A180"
+        android:layout_below="@+id/editText_sets"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_id"
+        android:textColor="#34A180"
+        android:layout_below="@+id/editText_sets"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Enter the Exercises you want to add to your Plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="#34A180"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_below="@+id/button_delete"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Delete Exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_delete"
+        android:textColor="#34A180"
+        android:layout_alignTop="@+id/button_update"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Update Routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/button_update"
+        android:layout_marginTop="13dp"
+        android:textColor="#34A180"
+        android:layout_below="@+id/button_view"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:text="Exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="#34A180"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_above="@+id/editText_reps"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
